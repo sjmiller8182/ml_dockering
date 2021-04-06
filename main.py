@@ -11,8 +11,6 @@ from package.preprocessing import read_data, preprocess
 from package.model_utils import train_model
 from package.app_util import json_to_row
 
-print(os.listdir('./'))
-
 app = Flask(__name__)
 
 DATA_PATH = './data/'

@@ -3,6 +3,8 @@ app:
   host: '0.0.0.0'
   port: 1313
 
+random_seed: 100
+
 # model cfg
 model_params:
   n_estimators: 100
