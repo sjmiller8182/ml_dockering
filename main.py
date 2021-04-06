@@ -13,13 +13,13 @@ from package.app_util import json_to_row
 
 app = Flask(__name__)
 
-DATA_PATH = './data/'
-DATA_FILE = 'wine_data.csv'
-random_state = np.random.RandomState(100)
-
 # read in configuration
 with open('./deploy/service_cfg.yaml', 'r') as cfg_file:
     cfg = yaml.safe_load(cfg_file)
+
+DATA_PATH = './data/'
+DATA_FILE = 'wine_data.csv'
+random_state = np.random.RandomState(cfg['random_seed'])
 
 # we are going to keep our base data here
 if not os.path.exists(DATA_PATH):
