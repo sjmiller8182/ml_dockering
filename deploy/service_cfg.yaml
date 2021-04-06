@@ -1,0 +1,9 @@
+# app section
+app:
+  host: '0.0.0.0'
+  port: 1313
+
+# model cfg
+model_params:
+  n_estimators: 100
+  criterion: 'gini'
